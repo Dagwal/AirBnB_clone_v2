@@ -1,18 +1,185 @@
 header {
-	background-color: white;
-	height: 70px;
-	width: 100%;
-	
-	border-bottom: 1px solid #CCCCCC;
+    color: white;
+    height: 70px;
+    width: 100%;
+    border-bottom: solid 1px #CCCCCC;
 }
 
-#header_logo {
-	height: 100%;
-	width: 142px;
+.logo {
+    width: auto;
+    height: inherit;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+}
 
-	background-image: url("../images/logo.png");
-	background-repeat: no-repeat;
-	background-position: center;
 
-	margin-left: 20px;
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) {
+    header {
+        height: 35px;
+    }
+    
+    .logo {
+        background-size: 80px;
+        margin-left: 10px;
+    }
+}
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) { 
+    header {
+        height: 40px;
+    }
+    
+    .logo {
+        background-size: 85px;
+        margin-left: 10px;
+    }
+}
+
+/* ----------- iPhone SE ----------- */
+
+/* Potrait */
+
+@media screen 
+  and (device-width: 375px) 
+  and (device-height: 667px) {
+    header {
+        height: 40px;
+    }
+    
+    .logo {
+        background-size: 85px;
+        margin-left: 10px;
+    }
+}
+
+/* ----------- iPhone XR ----------- */
+
+/* Potrait */
+
+@media screen 
+  and (device-width: 414px) 
+  and (device-height: 896px) {
+    header {
+        height: 40px;
+    }
+    
+    .logo {
+        background-size: 85px;
+        margin-left: 10px;
+    }
+}
+
+/* ----------- Galaxy Note 3 and S6 ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) {
+    header {
+        height: 35px;
+    }
+    
+    .logo {
+        background-size: 80px;
+        margin-left: 10px;
+    }
+}
+
+
+/* ----------- Samsung S8+ ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 740px) {
+    header {
+        height: 35px;
+    }
+    
+    .logo {
+        background-size: 80px;
+        margin-left: 10px;
+    }
+}
+
+
+/* ----------- Google Pixel 5 ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 393px) 
+  and (device-height: 851px)  {
+    header {
+        height: 35px;
+    }
+    
+    .logo {
+        background-size: 80px;
+        margin-left: 10px;
+    }
+}
+
+
+
+/* ----------- Google Pixel 2 XL ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 823px) {
+    header {
+        height: 35px;
+    }
+    
+    .logo {
+        background-size: 80px;
+        margin-left: 10px;
+    }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px){
+    header {
+        height: 80px;
+    }
+    
+    .logo {
+        background-size: 180px;
+        margin-left: 10px;
+    }
+}
+
+/* ----------- iPad Pro ----------- */
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px){
+    header {
+        height: 100px;
+    }
+    
+    .logo {
+        background-size: 200px;
+        margin-left: 10px;
+    }
 }
