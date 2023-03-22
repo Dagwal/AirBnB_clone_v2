@@ -102,5 +102,3 @@ The *syntax* is: help \<command\>
 * **EOF** 	Exit console
 
 
-## Contributors :two_women_holding_hands:  
-[@Mohammed - Github](https://github.com/moha-mame) - [@Neima Nesru - Github](https://github.com/Nemuuuu)
