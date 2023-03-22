@@ -1,814 +1,209 @@
 .places {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 45px auto;
+	text-align: center;
 }
 
-.places h1{
-  font-size: 30px;
-  width: 100%;
-  text-align: left;
-  margin-left: 30px;
+article {
+	display: flex;
+	width: 390px;
+	flex: none;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: flex-start;
+
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 40px;
+	margin: 20px;
+
+	border: 1px solid #FF5A5F;
+	border-radius: 4px;
 }
 
-.places article {
-  width: 390px;
-  padding: 20px;
-  margin: 20px;
-  border: #FF5A5F 1px solid;
-  border-radius: 4px;
-  display: inline-block;
-  position: relative;
+.headline {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+
+	height: 80px;	
+	width: 100%;
 }
 
-.places h2 {
-  font-size: 30px;
-  text-align: center;
-}
-
-/* contents inside each box */
 .price_by_night {
-  color: #FF5A5F;
-  border: 5px solid #FF5A5F;
-  border-radius: 50%;
-  min-width: 60px;
-  height: 60px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  text-align: center;
+	display: flex;
+	justify-content: center;
+	align-self: flex-end;
+
+	position: absolute;
+	right: 0;
+
+	line-height: 60px;
+	color: #FF5A5F;
+	font-size: 30px;
+	padding: 5px;
+	border: 4px solid #FF5A5F;
+	border-radius: 100%;
+	float: right;
+	min-width: 60px;
+	height: 60px;
 }
 
 .information {
-  height: 80px;
-  border-top: #DDDDDD 1px solid;
-  border-bottom: #DDDDDD 1px solid;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+	display: block;
+	height: 80px;
+	width: 100%;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+
+	padding-top: 5px;
+	padding-bottom: 12px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
-.max_guest {
-  width: 100px;
-  background-image: url(../images/icon_group.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: auto;
+.max_guest, .number_rooms, .number_bathrooms {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	margin: 0px auto;
 }
 
-.information p {
-  position: relative;
-  top: 2rem;
+.user {
+	margin-top: 5px;
+	margin-bottom: 5px;	
 }
 
-.number_rooms {
-  width: 100px;
-  background: url(../images/icon_bed.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: auto;
+.description {
+	text-align: left;
 }
 
-.number_bathrooms {
-  width: 100px;
-  background: url(../images/icon_bath.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: auto;
+h1 {
+	display: block;
+	text-align: left;
+	width: 95%;
+	display: block;
+	margin-top: 0px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	font-size: 30px;
 }
 
-/*AMENITIES*/
-
-.amenitie {
-  margin-top: 40px;
+article .amenities {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 40px;
 }
 
-.amenitie h2 {
-  font-size: 16px;
-  border-bottom:  #DDDDDD 1px solid;
-  text-align: left;
+.article_subtitle {
+	font-size: 16px;
+	text-align: left;
+	width: 100%;
+	border-bottom: 1px solid #DDDDDD;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 10px;
 }
 
-.amenitie li {
-  list-style: none;
+.article_title {
+	font-size: 30px;
+	margin: 10px auto;
+	padding: 0px;
 }
 
-.first_icon {
-  background-image: url(../images/icon_wifi.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  height: 20px;
-  background-size: contain;
-  padding-left: 25px;
+article ul {
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
-.second_icon {
-  background-image: url(../images/icon_tv.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  height: 20px;
-  background-size: contain;
-  padding-left: 25px;
+article li {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: flex-start;
+	margin-bottom: 10px;
 }
-
-.third_icon {
-  background-image: url(../images/icon_pets.png);
-  background-repeat: no-repeat;
-  height: 20px;
-  background-size: contain;
-  padding-left: 25px;
-}
-
-/*REVIEWS*/
 
 .reviews {
-  margin-top: 40px;
+	margin-top: 40px;
+	width: 100%;
 }
 
-.reviews h2 {
-  font-size: 16px;
-  border-bottom: solid #DDDDDD 1px;
-  text-align: left;
+.review_item {
+	margin-bottom: 10px;
 }
 
-.reviews li {
-  list-style: none;
+.review_text {
+	margin: 0px;
 }
 
-.reviews ul li h3 {
-  font-size: 14px;
+article h3 {
+	font-size: 14px;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 5px;
+
 }
 
-.reviews ul li p {
-  font-size: 12px;
+.guest_icon {
+	display: inline-block;
+	background-image: url("../images/icon_group.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 50px;
+	height: 50px;
 }
 
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) {
-  .places h1{
-    font-size: 20px;
-    margin-left: 50px;
-  }
-
-  
-  .places article {
-    width: 330px;
-  }
-
-  .places h2 {
-    font-size: 23px;
-  }
-
-  .price_by_night {
-    font-size: 18px;
-    width: 40px;
-    height: 55px;
-    top: .8rem;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
+.bed_icon {
+	display: inline-block;
+	background-image: url("../images/icon_bed.png");
+	background-repeat: no-repeat;
+	background-position: center;
+    width: 50px;
+    height: 50px;
 }
 
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 812px) { 
-  .places h1{
-    font-size: 20px;
-    margin-left: 30px;
-  }
-
-  
-  .places article {
-    width: 310px;
-  }
-
-  .places h2 {
-    font-size: 23px;
-  }
-
-  .price_by_night {
-    font-size: 18px;
-    width: 40px;
-    height: 55px;
-    top: .8rem;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
+.bath_icon {
+	display: inline-block;
+	background-image: url("../images/icon_bath.png");
+	background-repeat: no-repeat;
+	background-position: center;
+    width: 50px;
+    height: 50px;
 }
 
-/* ----------- iPhone SE ----------- */
+.tv_icon {
+	display: inline-block;
+	background-image: url("../images/icon_tv.png");
+	background-size: cover;
+	width: 20px;
+	height: 20px;
 
-/* Potrait */
-
-@media screen 
-and (device-width: 375px) 
-and (device-height: 667px) {
-  .places h1{
-    font-size: 20px;
-    margin-left: 30px;
-  }
-
-  
-  .places article {
-    width: 290px;
-  }
-
-  .places h2 {
-    font-size: 23px;
-  }
-
-  .price_by_night {
-    font-size: 18px;
-    width: 40px;
-    height: 55px;
-    top: .8rem;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
+	margin-right: 10px;
 }
 
-/* ----------- iPhone XR ----------- */
+.wifi_icon {
+	display: inline-block;
+    background-image: url("../images/icon_wifi.png");
+    background-size: cover;
+	width: 20px;
+    height: 20px;
 
-/* Potrait */
-
-@media screen 
-and (device-width: 414px) 
-and (device-height: 896px) {
-  .places h1{
-    font-size: 20px;
-    margin-left: 50px;
-  }
-
-  .places article {
-    width: 310px;
-  }
-
-  .places h2 {
-    font-size: 23px;
-  }
-
-  .price_by_night {
-    font-size: 18px;
-    width: 40px;
-    height: 55px;
-    top: .8rem;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
+	margin-right: 10px;
 }
 
-/* ----------- Galaxy Note 3 and S6 ----------- */
-
-/* Portrait */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) {
-  .places h1{
-    font-size: 20px;
-    margin-left: 30px;
-  }
-
-  .places article {
-    width: 270px;
-  }
-
-  .places h2 {
-    font-size: 22px;
-  }
-
-  .price_by_night {
-    font-size: 18px;
-    width: 40px;
-    height: 55px;
-    top: .8rem;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
-}
-
-
-/* ----------- Samsung S8+ ----------- */
-
-/* Portrait */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 740px) {
-  .places h1{
-    font-size: 20px;
-    margin-left: 30px;
-  }
-
-  .places article {
-    width: 280px;
-  }
-
-  .places h2 {
-    font-size: 25px;
-  }
-
-  .price_by_night {
-    font-size: 18px;
-    width: 40px;
-    height: 55px;
-    top: .8rem;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
-}
-
-
-/* ----------- Google Pixel 5 ----------- */
-
-/* Portrait */
-@media screen 
-and (device-width: 393px) 
-and (device-height: 851px)  {
-  .places h1{
-    font-size: 20px;
-    margin-left: 40px;
-  }
-
-  .places article {
-    width: 300px;
-  }
-
-  .places h2 {
-    font-size: 25px;
-  }
-
-  .price_by_night {
-    font-size: 18px;
-    width: fit-content;
-    height: 55px;
-    top: .8rem;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
-}
-
-
-
-/* ----------- Google Pixel 2 XL ----------- */
-
-/* Portrait */
-@media screen 
-and (device-width: 411px) 
-and (device-height: 823px) {
-  .places h1{
-    font-size: 20px;
-    margin-left: 50px;
-  }
-
-  .places article {
-    width: 315px;
-  }
-
-  .places h2 {
-    font-size: 25px;
-  }
-
-  .price_by_night {
-    font-size: 18px;
-    width: fit-content;
-    height: 55px;
-    top: .8rem;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
-}
-
-/* ----------- iPad Mini ----------- */
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px){
-  .places h1{
-    font-size: 28px;
-    margin-left: 40px;
-  }
-
-  .places article {
-    width: 650px;
-  }
-
-  .price_by_night {
-    font-size: 25px;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
-}
-
-/* ----------- iPad Air ----------- */
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 820px) 
-and (max-device-width: 1180px){
-  .places h1{
-    font-size: 28px;
-    margin-left: 70px;
-  }
-
-  .places article {
-    width: 650px;
-  }
-
-  .price_by_night {
-    font-size: 25px;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
-}
-
-/* ----------- iPad Pro ----------- */
-
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-and (min-device-width: 1024px) 
-and (max-device-width: 1366px){
-  .places h1{
-    font-size: 28px;
-    margin-left: 70px;
-  }
-
-  .places article {
-    width: 850px;
-  }
-
-  .price_by_night {
-    font-size: 25px;
-  }
-
-  .amenitie li {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-    font-size: 10px;
-  }
-
-  .first_icon {
-    padding-left: 30px;
-  }
-
-  .first_icon p {
-    padding-top: .3rem;
-  }
-  
-  .second_icon {
-    padding-left: 30px;
-  }
-
-  .second_icon p {
-    padding-top: .3rem;
-  }
-  
-  .third_icon {
-    padding-left: 30px;
-  }
-
-  .third_icon p {
-    padding-top: .3rem;
-  }
-
-  .reviews li {
-    margin-left: -2rem;
-  }
+.pet_icon {
+	display: inline-block;
+    background-image: url("../images/icon_pets.png");
+	background-size: cover;
+    width: 20px;
+	height: 20px;
+
+	margin-right: 10px;
 }
